@@ -55,3 +55,12 @@ const id1: Id = 123;
 const id2: Id = '123';
 
 type SomeType = string | null | undefined;
+
+//-------------------------------------------
+
+const SomeTypeForActions: string = 'SomeString'
+
+type Actions {
+  type: ty
+}
+

@@ -24,6 +24,7 @@ class Car { //эквивалентно тому что выше
 }
 
 //=====================================================
+//private, public, protected, static, abstract
 
 class Animal {
     protected voice: string = ''
@@ -44,7 +45,7 @@ cat.setVoice('meau')
 
 //==========================================================
 
-abstract class Component {
+abstract class Component { // нельзя создать инсанс, можно только унаследоваться от него
     abstract render(): void
     abstract info(): string
 }

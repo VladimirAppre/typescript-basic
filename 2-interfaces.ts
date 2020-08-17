@@ -49,7 +49,7 @@ const rect5: RectWithArea = {
 
 //====================
 
-interface Iclock {
+interface Iclock {  
     time: Date
     setTime(date: Date) : void
 }

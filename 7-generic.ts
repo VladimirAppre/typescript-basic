@@ -6,3 +6,17 @@ function reverse <T>(array: T[]): T[ ] { //дженерик ди подстра�
 }
 reverse(arrayOfNumbers)
 reverse(arrayOfStrings)
+
+function getPropValue <T>(obj: T, key: keyof T): T[keyof T]{
+    return obj[key]
+}
+
+const user = {
+    name: 'Vladimir',
+    nickName: 'Vladimir.Appre'
+}
+console.log(
+
+getPropValue(user, 'name')
+)
+

@@ -34,3 +34,28 @@ function position(a?: number, b?: number) {
 console.log('Empty', position())
 console.log('one param', position(42))
 console.log('two param', position())
+
+
+// spread
+function spreadFunc(a: string, ...others: number[]) {
+
+}
+
+//this
+interface Iobj {
+    name: string
+    surname: string
+    hello(surname: string): void
+}
+
+let obj: Iobj = {
+    name: 'Vladimir',
+    surname: 'Pinki',
+    hello (this: Iobj, surname ) {
+        console.log(this.name, surname)
+    }
+}
+
+let surname: string = 'petye'
+
+obj.hello(surname)
